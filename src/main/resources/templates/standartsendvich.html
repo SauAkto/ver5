@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/standSendvich.css">
+    <title th:text="${title}"/>
+
+</head>
+<header>
+    <div class="header">
+        <span id="header_text"><a href="/home">На галвную</a> </span>
+        <span id="header_text"><a href="/parametrs">Параметры</a> </span>
+        <span id="header_text"><a href="/home">Пожелания</a> </span>
+    </div>
+</header>
+<body>
+<form action="/standartsendvich" method="post" id="standartsendvich">
+<p id="text_zaglav">Стандартное многослойное резиновое покрытие</p>
+<p style="text-align: center;"></p>
+<p id="text_zaglav">Входные параметры</p>
+
+<div class="tabVhodParam">
+    <div class = "divcentr">
+
+        <div class="tabVP">
+            <div class="tabVP1">Площадь покрытия, цвет красный</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Площадь покрытия, цвет зеленый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Площадь покрытия, цвет синий</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Площадь покрытия, цвет жёлтый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Площадь покрытия, цвет оранжевый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Площадь покрытия, цвет коричневый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Толщина верхнего слоя покрытия</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">мм</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Толщина нижнего слоя покрытия</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">мм</div>
+        </div>
+    </div>
+</div>
+<br><br>
+<p id="text_zaglav">Результаты расчета</p>
+<div class="tabl_raschet">
+    <table id="table_raschet" border="1">
+        <tbody>
+        <tr id="text_height">
+            <td id="text1">Стоимость общая</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+            <td id="text2">Общий вес</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность клей, стандарт</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность клей, для подложки</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность праймер</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность черная крошка</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность скипидар</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность пигмента красный</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность пигмента зеленый</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность пигмента синий</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность пигмента жёлтый</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность пигмента оранжевый</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Потребность пигмента коричневый</td>
+            <td id="text4"></td>
+            <td id="text3">кг</td>
+            <td id="text2">Стоимость</td>
+            <td id="text4"></td>
+            <td id="text3">руб</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    <div class="button_raschet">
+        <button id="button_raschet" type="submit" form="standartsendvich">
+            Расчитать
+        </button>
+    </div>
+<br>
+<p id="text_zaglav">Дополнительные данные о материале</p>
+
+<div class="table_dop_data">
+    <table id="table_dop_data" border="1">
+        <tbody>
+        <tr id="text_height">
+            <td id="text1">Клей стандарт, бочка</td>
+            <td id="text4"></td>
+            <td id="text3"> шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Клей стандарт, вёдро</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Клей для подложки, бочка</td>
+            <td id="text4"></td>
+            <td id="text3"> шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Клей для подложки, ведро</td>
+            <td id="text4"></td>
+            <td id="text3"> шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Черная резиновая крошка, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Праймер, ведро</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Скипидар, канистра</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент красный, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент зеленый, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент синий, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент жёлтый, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент коричневый, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент оранжевый, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+        <tr id="text_height">
+            <td id="text1">Пигмент коричневый, мешок</td>
+            <td id="text4"></td>
+            <td id="text3">шт</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<p id="text_zaglav">Корректировка стоимости</p>
+<div class="tabVhodParam">
+    <div class = "divcentr">
+
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость стандартного связующего, бочка</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость стандартного связующего, ведро</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость связующего для подложки, бочка</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость связующего для подложки, ведро</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость черная крошка</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость праймера</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость скипидара</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость пигмента, цвет красный</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость пигмента, цвет зеленый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость пигмента, цвет жёлтый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость пигмента, цвет синий</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость пигмента, цвет коричневый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Стоимость пигмента, цвет оранжевый</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">руб/кг</div>
+        </div>
+    </div>
+</div>
+<br>
+<p id="text_zaglav">Корректировка расхода (на 1 м2 при толщине 10мм)</p>
+<div class="tabVhodParam">
+    <div class = "divcentr">
+
+        <div class="tabVP">
+            <div class="tabVP1">Расход связующего, верхний слой</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">кг/м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Расход связующего, подложка</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">кг/м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Расход черной крошки</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">кг/м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Расход праймера</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">кг/м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Расход скипидара</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">л/м2</div>
+        </div>
+        <div class="tabVP">
+            <div class="tabVP1">Расход пигмента</div>
+            <div class="tabVP2"><input type="text" size="10"></div>
+            <div class="tabVP3">кг/м2</div>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/parametrs.css">
+    <title th:text="${title}"/>
+
+</head>
+<header>
+    <div class="header">
+        <span id="header_text"><a href="/home">На главную</a> </span>
+        <span id="header_text"><a href="/parametrs">Параметры</a> </span>
+        <span id="header_text"><a href="/home">Пожелания</a> </span>
+    </div>
+</header>
+<body>
+<form action="/parametrs" method="post" id="parametrs">
+    <p id="text_zaglav">Общие параметры материалов, стоимость и расход</p>
+
+    <p id="text_zaglav">Стоимость основных материалов</p>
+
+    <div class="tabVhodParam">
+        <div class = "divcentr">
+
+            <div class="tabVP">
+                <div class="tabVP1">Стандартное связующее в бочке</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+            <div class="tabVP">
+                <div class="tabVP1">Стандартное связующее в ведре</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+            <div class="tabVP">
+                <div class="tabVP1">Связующее для подложки в бочке</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+            <div class="tabVP">
+                <div class="tabVP1">Связующее для подложки в ведре</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+            <div class="tabVP">
+                <div class="tabVP1">Связующее черной резиновой крошки</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div id="link">
+        <p id="text_zaglav"><span id="span_text"><a href="/priceepdm">Стоимость ЭПДМ крошки</a></span>
+            <span id="span_text"><a href="/priceepdm">Стоимость окрашенной SBR крошки</a></span></p>
+        <p id="text_zaglav"><span id="span_text"><a href="/priceepdm">Стоимость пигментов</a></span></p>
+    </div>
+    <p id="text_zaglav">Стоимость сопутствующих материалов</p>
+
+    <div class="tabVhodParam">
+        <div class = "divcentr">
+
+            <div class="tabVP">
+                <div class="tabVP1">Праймер (грунтовка)</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+            <div class="tabVP">
+                <div class="tabVP1">Скипидар</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/л</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button_raschet">
+        <button id="button_raschet" type="submit" form="parametrs">
+            Записать
+        </button>
+    </div>
+    <br>
+
+
+
+</form>
+</body>
+</html>
