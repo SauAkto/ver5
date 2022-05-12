@@ -1,0 +1,64 @@
+/* CSS styles */
+
+a:hover{
+    color: green;
+    font-size: 150%;
+}
+#span_text{
+    padding-left: 10px;
+}
+#link{
+    background-color: aqua;
+}
+
+.button_raschet{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#button_raschet{
+
+}
+#header_text{
+    padding-left: 15px;
+    text-align: center;
+}
+#text_zaglav{
+    text-align: center;
+}
+
+.tabVhodParam{
+    background-color: aqua;
+    clear: both;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.divcentr{
+    display: inline-block;
+    height: auto;
+    width: 350px;
+
+}
+.divcentr:hover{
+    outline: 2px solid #000;
+    background-color: white;
+}
+.tabVP{
+    clear: both;
+    padding: 5px;
+}
+.tabVP1{
+    float: left;
+    width: 170px;
+}
+.tabVP2{
+    float:left;
+}
+.tabVP3{
+    float:left;
+    margin: 0 0 0 10px;
+    width: 50px;
+}
+

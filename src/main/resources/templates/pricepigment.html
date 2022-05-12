@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/parametrs.css">
+    <link rel="stylesheet" type="text/css" href="/css/pricepigment.css">
     <title th:text="${title}"/>
 
 </head>
@@ -17,60 +17,42 @@
 <form action="/parametrs" method="post" id="parametrs">
     <p id="text_zaglav">Общие параметры материалов, стоимость и расход</p>
 
-    <p id="text_zaglav">Стоимость основных материалов</p>
+    <p id="text_zaglav">Стоимость пигментов</p>
 
     <div class="tabVhodParam">
         <div class = "divcentr">
 
             <div class="tabVP">
-                <div class="tabVP1">Стандартное связующее в бочке</div>
+                <div class="tabVP1">Красный</div>
                 <div class="tabVP2"><input type="text" size="10"></div>
                 <div class="tabVP3">руб/кг</div>
             </div>
             <div class="tabVP">
-                <div class="tabVP1">Стандартное связующее в ведре</div>
+                <div class="tabVP1">Зеленый</div>
                 <div class="tabVP2"><input type="text" size="10"></div>
                 <div class="tabVP3">руб/кг</div>
             </div>
             <div class="tabVP">
-                <div class="tabVP1">Связующее для подложки в бочке</div>
+                <div class="tabVP1">Синий</div>
                 <div class="tabVP2"><input type="text" size="10"></div>
                 <div class="tabVP3">руб/кг</div>
             </div>
             <div class="tabVP">
-                <div class="tabVP1">Связующее для подложки в ведре</div>
+                <div class="tabVP1">Жёлтый</div>
                 <div class="tabVP2"><input type="text" size="10"></div>
                 <div class="tabVP3">руб/кг</div>
             </div>
             <div class="tabVP">
-                <div class="tabVP1">Связующее черной резиновой крошки</div>
+                <div class="tabVP1">Оранжевый</div>
+                <div class="tabVP2"><input type="text" size="10"></div>
+                <div class="tabVP3">руб/кг</div>
+            </div>
+            <div class="tabVP">
+                <div class="tabVP1">Коричневый</div>
                 <div class="tabVP2"><input type="text" size="10"></div>
                 <div class="tabVP3">руб/кг</div>
             </div>
 
-        </div>
-    </div>
-    <br>
-    <div id="link">
-        <p id="text_zaglav"><span id="span_text"><a href="/priceepdm">Стоимость ЭПДМ крошки</a></span>
-            <span id="span_text"><a href="/pricecsbr">Стоимость окрашенной SBR крошки</a></span></p>
-        <p id="text_zaglav"><span id="span_text"><a href="/pricepigment">Стоимость пигментов</a></span></p>
-    </div>
-    <p id="text_zaglav">Стоимость сопутствующих материалов</p>
-
-    <div class="tabVhodParam">
-        <div class = "divcentr">
-
-            <div class="tabVP">
-                <div class="tabVP1">Праймер (грунтовка)</div>
-                <div class="tabVP2"><input type="text" size="10"></div>
-                <div class="tabVP3">руб/кг</div>
-            </div>
-            <div class="tabVP">
-                <div class="tabVP1">Скипидар</div>
-                <div class="tabVP2"><input type="text" size="10"></div>
-                <div class="tabVP3">руб/л</div>
-            </div>
         </div>
     </div>
 
